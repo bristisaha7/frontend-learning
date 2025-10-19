@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Learning</title>
+    <title>Interactive Web Learning</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Web Development</h1>
-        <button id="changeColorBtn">Change Color</button>
-        <p class="counter">Clicks: <span id="clickCount">0</span></p>
+        <h1 class="title">Interactive Web Development</h1>
+        <div class="card">
+            <button id="changeColorBtn">Change Background</button>
+            <button id="addEmoji">Add Random Emoji</button>
+            <p class="counter">Clicks: <span id="clickCount">0</span></p>
+            <div id="emojiContainer"></div>
+        </div>
+        <div class="color-history">
+            <h3>Color History</h3>
+            <div id="colorList"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
